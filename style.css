@@ -1,0 +1,40 @@
+* {
+    font-family: "EB Garamond", serif;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    width: 100%;
+}
+
+footer input, 
+footer textarea {
+    border: 1px solid #999; 
+    background-color: #fcfcfc; 
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+}
+
+footer textarea {
+    height: 120px;
+    resize: none;
+}
+
+footer button {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    background-color: #000; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: lowercase;
+}
