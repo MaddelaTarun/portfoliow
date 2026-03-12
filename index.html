@@ -5,21 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>t's portfolio.</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="nav-logo">తరుణ్</div>
+        <a href="#home" class="nav-logo">తరుణ్</a>
         <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -32,7 +25,7 @@
     <div class="scroll-container">
         <section id="home" class="page-section hero-layout">
             <div class="hero-image">
-                <img src="your-photo.jpg" alt="Tarun" class="profile-pic" />
+                <!-- <img src="your-photo.jpg" alt="Tarun" class="profile-pic" /> -->
             </div>
             <div class="hero-text">
                 <h1 class="name-container">
@@ -66,38 +59,6 @@
                 </div>
             </div>
         </section>
-
-        <footer id="contact" class="page-section">
-            <h2 class="terminal-head"><span class="hash">#</span> contact</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="your name" required />
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="mail (optional)" />
-                </div>
-                <div class="form-group">
-                    <input type="textarea" name="message" placeholder="message" required></textarea>
-                </div>
-                <button type="submit">send</button>
-            </form>
-
-            <div class="social-links">
-                <div class="social-item">
-                    <u><strong>LinkedIn:</strong></u>
-                    <a href="https://linkedin.com/in/YOUR_URL" target="_blank"
-                        class="repo-link">linkedin.com/in/tarun</a>
-                </div>
-                <div class="social-item">
-                    <u><strong>Instagram:</strong></u>
-                    <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="repo-link">@yourhandle</a>
-                </div>
-                <div class="social-item">
-                    <u><strong>Discord:</strong></u>
-                    <span class="social-id">tarun_id</span>
-                </div>
-            </div>
-        </footer>
 
         <section id="skills" class="page-section">
             <h2 class="terminal-head"><span class="hash">#</span> skills</h2>
@@ -159,17 +120,24 @@
         <footer id="contact" class="page-section">
             <h2 class="terminal-head"><span class="hash">#</span> contact</h2>
             <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="your name" required />
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="mail (optional)" />
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="message" required></textarea>
-                </div>
+                <div class="form-group"><input type="text" name="name" placeholder="your name" required /></div>
+                <div class="form-group"><input type="email" name="email" placeholder="mail (optional)" /></div>
+                <div class="form-group"><textarea name="message" placeholder="message" required></textarea></div>
                 <button type="submit">send</button>
             </form>
+
+            <div class="social-links-vertical">
+                <a href="https://www.linkedin.com/in/maddela-tarun/" target="_blank" class="social-row">
+                    <i class="fa-brands fa-linkedin"></i><span>Maddela Tarun</span>
+                </a>
+                <a href="https://instagram.com/mtaaruun" target="_blank" class="social-row">
+                    <i class="fa-brands fa-instagram"></i><span>@mtaaruun</span>
+                </a>
+                <div class="social-row discord-item">
+                    <i class="fa-brands fa-discord"></i><span id="discord-tag">taaarun</span>
+                    <span id="copy-status">copied!</span>
+                </div>
+            </div>
         </footer>
     </div>
 
