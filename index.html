@@ -1,120 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>t's portfolio.</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="navbar">
-      <div class="nav-logo">తరుణ్</div>
-      <ul class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+        <div class="nav-logo">తరుణ్</div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
     </nav>
 
     <div class="scroll-container">
-      <section id="home" class="page-section hero-layout">
-        <div class="hero-image">
-          <img src="your-photo.jpg" alt="Tarun" class="profile-pic" />
-        </div>
-        <div class="hero-text">
-          <h1 class="name-container">
-            <span class="telugu">తరుణ్</span>
-            <span class="english">tarun</span>
-          </h1>
-          <blockquote class="edison-quote">
-            “Just because something doesn’t do what you planned it to do doesn’t
-            mean it’s useless.”
-            <cite>— Thomas Edison</cite>
-          </blockquote>
-        </div>
-      </section>
-      <section id="about" class="page-section">
-        <h2 class="terminal-head"><span class="hash">#</span> about</h2>
-        <div class="about-container">
-          <p class="about-bio">
-            I am an explorer of systems, and I find more comfort in a terminal
-            than a nice UI. My exploration is driven by a cycle of breaking
-            things to understand their workings and the hard work that goes into
-            mending them, which has taken me deep into the rabbit hole that is
-            Linux and keeps me interested as I try to understand the intricacies
-            of programming. When I am not exploring the rabbit hole that is
-            programming, I am trying to clear my head with nature, swimming, or
-            figuring out the next move on a chessboard.
-          </p>
-          <div class="resume-cta">
-            <span class="cursor">></span>
-            <a href="#resume" class="about-link">resume.pdf</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="page-section">
-        <h2 class="terminal-head"><span class="hash">#</span> skills</h2>
-        <div class="tech-stack">
-          <span class="chip">java</span>
-          <span class="chip">javascript</span>
-          <span class="chip">nodejs</span>
-          <span class="chip">reactjs</span>
-          <span class="chip">tailwind css</span>
-          <span class="chip">figma</span>
-          <span class="chip">linux</span>
-          <span class="chip">neovim</span>
-        </div>
-      </section>
-
-      <section id="projects" class="page-section">
-        <h2 class="terminal-head"><span class="hash">#</span> projects</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <div class="project-header">Project #1: portfolio-website</div>
-            <p class="description">
-              <u>Description</u>: a personal site built using html, css and js
-            </p>
-            <div class="tech-stack">
-              <span class="chip">expressjs</span>
-              <span class="chip">nodemailer</span>
-              <span class="chip">dotenv</span>
+        <section id="home" class="page-section hero-layout">
+            <div class="hero-image">
+                <img src="your-photo.jpg" alt="Tarun" class="profile-pic" />
             </div>
-          </div>
-        </div>
-      </section>
+            <div class="hero-text">
+                <h1 class="name-container">
+                    <span class="telugu">తరుణ్</span>
+                    <span class="english">Tarun</span>
+                </h1>
+                <blockquote class="edison-quote">
+                    “Just because something doesn’t do what you planned it to do doesn’t
+                    mean it’s useless.”
+                    <cite>— Thomas Edison</cite>
+                </blockquote>
+            </div>
+        </section>
 
-      <footer id="contact" class="page-section">
-        <h2 class="terminal-head"><span class="hash">#</span> contact</h2>
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="your name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="mail (optional)" />
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="message" required></textarea>
-          </div>
-          <button type="submit">send</button>
-        </form>
-      </footer>
+        <section id="about" class="page-section">
+            <h2 class="terminal-head"><span class="hash">#</span> about</h2>
+            <div class="about-container">
+                <p class="about-bio">
+                    I am an explorer of systems, and I find more comfort in a terminal
+                    than a nice UI. My exploration is driven by a cycle of breaking
+                    things to understand their workings and the hard work that goes into
+                    mending them, which has taken me deep into the rabbit hole that is
+                    Linux and keeps me interested as I try to understand the intricacies
+                    of programming. When I am not exploring the rabbit hole that is
+                    programming, I am trying to clear my head with nature, swimming, or
+                    figuring out the next move on a chessboard.
+                </p>
+                <div class="resume-cta">
+                    <span class="cursor">></span>
+                    <a href="Resume.pdf" target="_blank" class="about-link">resume.pdf</a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="page-section">
+            <h2 class="terminal-head"><span class="hash">#</span> contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="your name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="mail (optional)" />
+                </div>
+                <div class="form-group">
+                    <input type="textarea" name="message" placeholder="message" required></textarea>
+                </div>
+                <button type="submit">send</button>
+            </form>
+
+            <div class="social-links">
+                <div class="social-item">
+                    <u><strong>LinkedIn:</strong></u>
+                    <a href="https://linkedin.com/in/YOUR_URL" target="_blank"
+                        class="repo-link">linkedin.com/in/tarun</a>
+                </div>
+                <div class="social-item">
+                    <u><strong>Instagram:</strong></u>
+                    <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="repo-link">@yourhandle</a>
+                </div>
+                <div class="social-item">
+                    <u><strong>Discord:</strong></u>
+                    <span class="social-id">tarun_id</span>
+                </div>
+            </div>
+        </footer>
+
+        <section id="skills" class="page-section">
+            <h2 class="terminal-head"><span class="hash">#</span> skills</h2>
+
+            <div class="skills-row">
+                <span class="category-label">languages ></span>
+                <div class="tech-stack">
+                    <span class="chip">java</span>
+                    <span class="chip">js</span>
+                    <span class="chip">c</span>
+                    <span class="chip">python</span>
+                    <span class="chip">bash</span>
+                </div>
+            </div>
+
+            <div class="skills-row">
+                <span class="category-label">frameworks ></span>
+                <div class="tech-stack">
+                    <span class="chip">reactjs</span>
+                    <span class="chip">tailwind</span>
+                </div>
+            </div>
+
+            <div class="skills-row">
+                <span class="category-label">tools ></span>
+                <div class="tech-stack">
+                    <span class="chip">neovim</span>
+                    <span class="chip">git</span>
+                    <span class="chip">linux</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <h2 class="terminal-head"><span class="hash">#</span> projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-header">Project #1: portfolio-website</div>
+
+                    <p class="description">
+                        <u><strong>Description:</strong></u> a personal site built using html, css and js
+                    </p>
+
+                    <div class="project-link-wrapper">
+                        <a href="https://github.com/MaddelaTarun/portfoliow" target="_blank" class="repo-link">
+                            github repo
+                        </a>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="chip">expressjs</span>
+                        <span class="chip">nodemailer</span>
+                        <span class="chip">dotenv</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="page-section">
+            <h2 class="terminal-head"><span class="hash">#</span> contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="your name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="mail (optional)" />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="message" required></textarea>
+                </div>
+                <button type="submit">send</button>
+            </form>
+        </footer>
     </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
