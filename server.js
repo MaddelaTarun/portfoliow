@@ -1,13 +1,14 @@
 const express = require('express')
 const cors = require('cors')
 const nodemailer = require('nodemailer')
+const path = require('path')
 require('dotenv').config()
 
 const app = express()
-const PORT = process.env.PORT || 3000
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static(path.join(__dirname)))
 
 // --- EMAIL ---
 const transporter = nodemailer.createTransport({
@@ -40,10 +41,4 @@ app.post('/send-message', (req, res) => {
     })
 })
 
-app.listen(PORT, () => {
-    console.log(`
-🚀 Server is screaming live!
-📡 URL: http://localhost:${PORT}
-📧 Mailer Ready: ${process.env.EMAIL_USER}
-    `);
-});
+module.exports = app
