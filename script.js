@@ -33,7 +33,7 @@ let stopping = false;
 const TRACK = {
     title: 'coffin nails',
     artist: 'mf doom',
-    src: 'MF DOOM - Coffin Nails (Official Audio).mp3',
+    src: 'coffin-nails.mp3',
     cover: 'albumcover.jpg',
 };
 
