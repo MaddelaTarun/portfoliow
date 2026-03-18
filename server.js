@@ -40,5 +40,4 @@ app.post('/send-message', (req, res) => {
         res.status(200).json({ status: 'success' })
     })
 })
-
 module.exports = app
