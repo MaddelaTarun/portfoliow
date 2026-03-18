@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>t's portfolio.</title>
+    <meta name="description" content="Tarun — CS student & developer. Linux nerd. Builder.">
+    <meta property="og:title" content="Tarun's Portfolio">
+    <meta property="og:description" content="CS student. Linux nerd. Builder.">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -13,6 +16,19 @@
 <body>
     <nav class="navbar">
         <a href="#home" class="nav-logo">తరుణ్</a>
+
+        <div class="navbar-player" id="navbar-player">
+            <div class="player-controls">
+                <button class="ctrl-btn" id="play-btn" onclick="togglePause()">
+                    <svg viewBox="0 0 24 24" id="play-icon"><path d="M6 4l15 8-15 8z"/></svg>
+                </button>
+                <button class="ctrl-btn" onclick="stopTrack()">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+                </button>
+            </div>
+            <div class="player-song" id="navbar-song"></div>
+        </div>
+
         <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -25,7 +41,19 @@
     <div class="scroll-container">
         <section id="home" class="page-section hero-layout">
             <div class="hero-image">
-                <!-- <img src="your-photo.jpg" alt="Tarun" class="profile-pic" /> -->
+                <div class="container-relative">
+                    <div class="vinyl-outer" id="vinyl" onclick="handleClick()">
+                        <div class="vinyl-disc"></div>
+                        <div class="vinyl-label">
+                            <img id="vinyl-img" src="your-photo1.jpg" alt="Tarun" />
+                        </div>
+                    </div>
+                    <svg class="needle-wrap" id="needle" viewBox="0 0 60 110" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="8" r="7" fill="#444" stroke="#666" stroke-width="1" />
+                        <line x1="30" y1="15" x2="30" y2="95" stroke="#777" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="30" cy="97" r="3.5" fill="#e83351" />
+                    </svg>
+                </div>
             </div>
             <div class="hero-text">
                 <h1 class="name-container">
@@ -33,8 +61,8 @@
                     <span class="english">Tarun</span>
                 </h1>
                 <blockquote class="edison-quote">
-                    “Just because something doesn’t do what you planned it to do doesn’t
-                    mean it’s useless.”
+                    "Just because something doesn't do what you planned it to do doesn't
+                    mean it's useless."
                     <cite>— Thomas Edison</cite>
                 </blockquote>
             </div>
@@ -97,17 +125,14 @@
             <div class="project-list">
                 <div class="project-item">
                     <div class="project-header">Project #1: portfolio-website</div>
-
                     <p class="description">
                         <u><strong>Description:</strong></u> a personal site built using html, css and js
                     </p>
-
                     <div class="project-link-wrapper">
                         <a href="https://github.com/MaddelaTarun/portfoliow" target="_blank" class="repo-link">
                             github repo
                         </a>
                     </div>
-
                     <div class="tech-stack">
                         <span class="chip">expressjs</span>
                         <span class="chip">nodemailer</span>
@@ -124,6 +149,7 @@
                 <div class="form-group"><input type="email" name="email" placeholder="mail (optional)" /></div>
                 <div class="form-group"><textarea name="message" placeholder="message" required></textarea></div>
                 <button type="submit">send</button>
+                <div id="form-status" style="font-size:0.85rem; color: var(--accent); min-height: 1.2em; margin-top: 5px;"></div>
             </form>
 
             <div class="social-links-vertical">
